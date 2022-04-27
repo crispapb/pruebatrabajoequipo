@@ -10,3 +10,16 @@
       background-color: #005184;
       font-family: $Titulos;
   }
+
+  a{
+      text-decoration: none;
+  }
+  
+  .boton{
+      color: #005184;
+      border: 1px solid #005184;
+      padding: 10px 25px;
+      font-family: $contenido;
+      font-weight: bold;
+      border-radius: 30px;
+  }
