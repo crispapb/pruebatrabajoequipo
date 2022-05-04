@@ -14,6 +14,8 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="https://kit.fontawesome.com/0a589e41cb.js" crossorigin="anonymous"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
@@ -37,23 +39,23 @@
               </button>
               <!--no cambiar el boton-->
 
-              <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+              <div class="collapse navbar-collapse nav justify-content-end " id="navbarNav">
                   <!--no tocar la clase de este div-->
                 <ul class="navbar-nav">
                   <li class="nav-item texto">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link text-white" href="nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#Seccion1">Seccion 1</a>
+                    <a class="nav-link text-white" href="#Seccion1">Seccion 1</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#Seccion2">Seccion 2</a>
+                    <a class="nav-link text-white" href="#Seccion2">Seccion 2</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contactos</a>
+                    <a class="nav-link text-white" href="#">Contactos</a>
                   </li>
                 </ul>
               </div>
@@ -103,13 +105,13 @@
           </div>
 
           <div class="container p-5" style="height: 100vh;"> <!--pading para espcio-->
-            <h1 class="mb-5">DESCRIPCION</h1>
+            <h1 class="mb-5 text-center">DESCRIPCION</h1>
 
             <div class="row align-items-center">
               <div class="col-lg-6 px-5" style="text-align: center;">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque ratione ullam placeat. Dolor deserunt voluptate modi dolorem omnis molestias unde vel optio accusantium, in earum deleniti ut iusto libero?</p>
                 <br>
-                <a  class= "boton" href="#">Saber más</a>
+                <a  class= "boton" data-bs-toggle="modal" data-bs-target="#myModal">Saber más</a>
               </div>
 
               <div class="col-lg-6">
@@ -118,6 +120,42 @@
             </div>
 
           </div>
+
+          <!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Saber mas</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="container-fluid footer1">
+            <div class="row  text-white">
+              <div class="col-lg-6 text-center d-flex justify-content-center align-items-center">
+                <h4>soy un modal</h4>
+              </div>
+              <div class="col-lg-6 py-5">
+                <img src="/img/carrucel/IMG_1843.JPG" alt="sepa" width="80%">
+              </div>
+            </div>
+        </div>
+        
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="boton" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
           <!--separador-->
           <div class="container-fluid p-5 mia">
@@ -139,6 +177,124 @@
               </div>
           </div>
 
+          <!--servicios-->
+
+          <div class="container text-center py-5" style="height: 100vh;">
+            <h1 class="mb-5" id="servicios">SERVICIOS</h1>
+            <div class="row">
+
+              <div class="col-lg-4">
+                <div class="card" style="width: 100%;">
+                  <img src="img/carrucel/IMG_1843.JPG" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">diseño de apps</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="boton">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card" style="width: 100%;">
+                  <img src="img/carrucel/IMG_1843.JPG" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">diseño de apps</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="boton">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card" style="width: 100%;">
+                  <img src="img/carrucel/IMG_1843.JPG" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">diseño de apps</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="boton">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <!--que podemos hacer-->
+
+          <div class="container text-center" style="height: 100vh;">
+          <h1>QUE PODEMOS HACER?</h1>
+
+          <div class="row align-items-center py-3">
+            <div class="col-lg-7">
+              <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" style="height: 100%; width: 100%;" >
+                    <img src="/img/carrucel/IMG_1843.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%; width: 100%;">
+                    <img src="/img/carrucel/IMG_2633.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="height: 100%; width: 100%;">
+                    <img src="img/carrucel/IMG_1836.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="col-lg-5">
+              <h3>cosas</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod facere maxime consequuntur dolor modi, accusantium doloribus veritatis aperiam sit atque provident, nihil dolorum rerum quisquam ex delectus enim nobis ducimus.
+              </p>
+            </div>
+
+          </div>
+
+          </div>
+
+          <!--cotiza una solucion-->
+          <div class="container text-center" style="height: 100vh;">
+            <div class="row align-items-center">
+              <div class="col-lg-7">
+                <h1 class="pt-5">COTIZA UNA SOLUCION</h1>
+                <br>
+                <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure placeat cupiditate voluptate eius quo obcaecati delectus quos aut a, beatae, soluta debitis consequuntur architecto nostrum eos magni, blanditiis assumenda nemo.</p>
+                <br>
+                <a  class="boton" href="#"> Saber más</a>
+              </div>
+              <div class="col-lg-5">
+                <img src="img/carrucel/IMG_1836.JPG" alt="" width="100%">
+              </div>
+            </div>
+          </div>
           <!--experimentos de la clase pasada-->
         <div class="conteiner min-vh-100 p-5 m-5" id="Seccion1">
             <div class="row">
@@ -157,9 +313,45 @@
         </div>
 
     </main>
-<!-- el pie de pagina-->
-    <footer>
 
+
+<!-- el pie de pagina-->
+    <footer class="text-center">
+        <div class="container-fluid footer1 text-white py-5">
+           <div class="row">
+             <div class="col-lg-4">
+               <h3>
+                 Iniciar un proyecto
+               </h1>
+               <h3>
+                 contactanos
+               </h4>
+               <a href="mailto:cristipb2000@hotmail.com">cristipb2000@hotmail.com</a>
+             </div>
+
+             <div class="col-lg-4">
+               <h3>
+                 Etiquetas
+               </h3>
+              <dl>
+                <dt><a href="">Preguntas frefuentes</a></dt>
+                <dt><a href="">Galeria</a></dt>
+                <dt><a href="">Clientes</a></dt>
+                <dt><a href="index.html#servicios">Servicios</a></dt>
+              </dl>
+
+             </div>
+
+              <div class="col-lg-4  d-flex justify-content-around align-self-center">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </div>
+
+           </div>
+           
+        </div>
+        <h6 class="footer2 py-2"><a href="cris.com">Cris</a>|2022</h6>
     </footer>
 </body>
 </html>
