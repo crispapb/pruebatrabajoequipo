@@ -24,7 +24,6 @@
 
 </head>
 
-
 <body>
 <!-- barra de navegacion-->
 <header>
@@ -377,11 +376,98 @@
   </div>
 </div>
 
+ <!--Cotiza una solucion-->
+ <div class="recuadro cotiza d-flex align-items-center">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-7">
+        <h1 class="pt-5">COTIZA UNA SOLUCION</h1>
+
+            <br>
+            <p class="px-5 texto3">El miedo al precio es algo, que aunque es natural, con nosotros
+              no tienes porque tener miedo al respecto, podemos ajustarnos a cualquier presupuesto
+              y no por tener un precio bajo, significa que sea de mala calidad.
+            </p>
+            <br>
+            <a  class="boton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Saber más</a>
+      </div>
+
+      <div class="col-lg-4">
+        <img src="img/nosotros/4.jpg" alt="" width="100%">
+      </div>
+    </div>
+    
+  </div>
+</div>
+
 </main>
 
+<!-- el pie de pagina-->
+<footer class="text-center">
+    <div class="container-fluid footer1 text-white py-5">
+       <div class="row">
+         <div class="col-lg-4">
+           <h3>
+             Iniciar un proyecto
+           </h3>
+           <h4>
+             contactanos
+           </h4>
+           <a href="mailto:correo@pixxitas.com">correo@piixitas.com</a>
+         </div>
 
-<footer>
+         <div class="col-lg-4">
+           <h3>
+             Etiquetas
+           </h3>
+          <dl>
+            <dt><a href="">Preguntas frefuentes</a></dt>
+            <dt><a href="">Galeria</a></dt>
+            <dt><a href="">Clientes</a></dt>
+            <dt><a href="index.html#servicios">Servicios</a></dt>
+          </dl>
 
+         </div>
+
+          <div class="col-lg-4  d-flex justify-content-around align-self-center">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+
+       </div>
+       
+    </div>
+    <h6 class="footer2 py-2"><a href="cris.com">Piixitas</a>|2022</h6>
 </footer>
 
+ <!--wats flotante-->
+ <div class="position-fixed" style="bottom: 50px; right: 50px;">
+  <a class="btn btn-primary boton" id="toastbtn"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+   </div>
+</div>
+
+<script>
+  document.getElementById("toastbtn").onclick = function() {
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function(toastEl) {
+      return new bootstrap.Toast(toastEl)
+    })
+    toastList.forEach(toast => toast.show()) 
+  }
+</script>
+
 </body>
+</html>
