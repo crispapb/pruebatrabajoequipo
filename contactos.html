@@ -107,15 +107,27 @@
 
       </div>
 
-<div class="container">
+<div class="container py-5">
     <div class="row">
-    <div class="col-lg-6">  
+    <div class="col-lg-6 texto3">  
 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque illo cupiditate adipisci illum excepturi incidunt delectus omnis magni quam veritatis laboriosam ipsa exercitationem sit cum, praesentium possimus? Eligendi, itaque.</p>
     </div>
 
-    <div class="col-lg-6">
-<h2> Nombre</h>
-<p> Juan perez</p>
+    <div class="col-lg-6 texto3">
+<p>Nombre</p>
+<p class="juan">Juan perez</p>
+<p>Correo</p>
+<p class="juan">Correo.com</p>
+<p>Telefono</p>
+<p class="juan">+52</p>
+<p>Presupuesto</p>
+<p class="juan">$</p>
+<p> Mensaje</p>
+<p class="juan">Ejemplo....</p>
+
+
+<button type="button" class="boton">Enviar</button>
+
 
     </div>
     </div>
@@ -123,3 +135,70 @@
 </div>
 
 </main>
+
+<footer class="text-center">
+  <div class="container-fluid footer1 text-white py-5">
+     <div class="row">
+       <div class="col-lg-4">
+         <h3>
+           Iniciar un proyecto
+         </h3>
+         <h4>
+           contactanos
+         </h4>
+         <a href="mailto:correo@pixxitas.com">correo@piixitas.com</a>
+       </div>
+
+       <div class="col-lg-4">
+         <h3>
+           Etiquetas
+         </h3>
+        <dl>
+          <dt><a href="">Preguntas frefuentes</a></dt>
+          <dt><a href="">Galeria</a></dt>
+          <dt><a href="">Clientes</a></dt>
+          <dt><a href="index.html#servicios">Servicios</a></dt>
+        </dl>
+
+       </div>
+
+        <div class="col-lg-4  d-flex justify-content-around align-self-center">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+     </div>
+     
+  </div>
+  <h6 class="footer2 py-2"><a href="cris.com">Piixitas</a>|2022</h6>
+</footer>
+
+ <!--wats flotante-->
+ <div class="position-fixed" style="bottom: 50px; right: 50px;">
+  <a class="btn btn-primary boton" id="toastbtn"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+   </div>
+</div>
+
+<script>
+  document.getElementById("toastbtn").onclick = function() {
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function(toastEl) {
+      return new bootstrap.Toast(toastEl)
+    })
+    toastList.forEach(toast => toast.show()) 
+  }
+</script>
+</body>
