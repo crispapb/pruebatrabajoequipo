@@ -44,7 +44,7 @@
                     <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Nosotros</a>
+                    <a class="nav-link text-white" href="nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" href="#">Servicios</a>
@@ -73,7 +73,7 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" style="height: 100vh;">
-              <img src="img/nosotros/3.jpg" class="d-block w-100" alt="...">
+              <img src="img/nosotros/1.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>piixitas</h5>
                 <p>La mejor opcion para tí</p>
@@ -272,6 +272,34 @@
       </div>
       <h6 class="footer2 py-2"><a href="cris.com">Piixitas</a>|2022</h6>
   </footer>
+
+  <!--wats flotante-->
+  <div class="position-fixed" style="bottom: 50px; right: 50px;">
+    <a class="btn btn-primary boton" id="toastbtn"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded me-2" alt="...">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+     </div>
+  </div>
+
+  <script>
+    document.getElementById("toastbtn").onclick = function() {
+      var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+      var toastList = toastElList.map(function(toastEl) {
+        return new bootstrap.Toast(toastEl)
+      })
+      toastList.forEach(toast => toast.show()) 
+    }
+  </script>
 
 </body>
 </html>
