@@ -78,3 +78,90 @@
     color: #010238;
     font-family: $contenido;
   }
+  /*-------------------------------------------------------------- 
+
+# GALERÍA 1 MODAL 
+
+--------------------------------------------------------------*/ 
+
+#portfolio1 .portfolio-item { 
+  max-width: 25rem; 
+  margin-left: auto; 
+  margin-right: auto; 
+
+} 
+
+#portfolio1 .portfolio-item .portfolio-link { 
+  position: relative; 
+  display: block; 
+  margin: 0 auto; 
+
+} 
+
+#portfolio1 .portfolio-item .portfolio-link .portfolio-hover { 
+  display: flex; 
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  background: rgba(255, 255, 255, 0.438); 
+  align-items: center; 
+  justify-content: center; 
+  opacity: 0; 
+  transition: opacity ease-in-out 0.25s; 
+
+} 
+
+#portfolio1 .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content { 
+  font-size: 1.25rem; 
+  color: white; 
+
+} 
+
+#portfolio1 .portfolio-item .portfolio-link:hover .portfolio-hover { 
+  opacity: 1; 
+} 
+
+#portfolio1 .portfolio-item .portfolio-caption { 
+  padding: 1.5rem; 
+  text-align: center; 
+  background-color: #fff; 
+
+} 
+
+#portfolio1 .portfolio-item .portfolio-caption .portfolio-caption-heading { 
+  font-size: 1.5rem; 
+  font-weight: 700; 
+  margin-bottom: 0; 
+
+} 
+
+/*-------------------------------------------------------------- 
+
+# ESTILOS DEL MODAL 
+
+--------------------------------------------------------------*/ 
+
+.modal-content{ 
+  background-color: rgba(0, 0, 0, 0.623); 
+  border: none; 
+  border-radius: 0; 
+
+
+
+
+  color: white; 
+  a{ 
+      color: white; 
+  } 
+
+} 
+
+
+
+
+.modal-header{ 
+
+  border-bottom: none; 
+
+} 
+
