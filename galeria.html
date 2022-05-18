@@ -290,6 +290,34 @@
                 </div> 
               </div> 
             </section> 
+
+        </div> 
+
+        <!-- Separador con video  --> 
+    <section class="container-fluid px-0 position-relative bg-alter" style="max-height: 100vh; overflow: hidden;">     
+        <div class="d-none d-md-block"> 
+            <!-- Con video responsivo --> 
+            <video loop autoplay muted controlsList="nodownload nofullscreen noremoteplayback" class="w-100 h-auto " title="Presentación biografía" id="video">   
+              <source src="video/video5.mp4" type="video/mp4" /> 
+              <span>OH NOES - you don't support html5 video!</span> 
+            </video> 
+            <!-- Con video NO responsivo  
+            <video loop autoplay controlsList="nodownload nofullscreen noremoteplayback" class="min-vw-100 h-auto">   
+              <source src="videos/anim1webm.webm" type="video/webm" /> 
+              <span>OH NOES - you don't support html5 video!</span> 
+            </video> 
+            --> 
+        </div> 
+
+        <div class="row position-absolute" style="top:40%; left: 50%; z-index: 5"> 
+                    <div class="col-lg-12 col-sm-12 d-flex flex-wrap align-content-center"> 
+                <div class="mx-auto"> 
+                    <a href="" class="boton">[ Biografía_ ]</a> 
+                    <!-- Estructura de contenido --> 
+                </div> 
+            </div> 
+        </div> 
+      </section> 
     </main>
 
     <!-- el pie de pagina-->
@@ -369,6 +397,8 @@
     <!-- Codigo para GALERÍA 2--> 
 
     <script src="js/codigo.js"></script> 
+
+    <!--Para el video-->
 
     <script> 
     $(document).ready(function(){ 
