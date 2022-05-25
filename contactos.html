@@ -114,20 +114,61 @@
     </div>
 
     <div class="col-lg-6 texto3">
-<p>Nombre</p>
-<p class="juan">Juan perez</p>
-<p>Correo</p>
-<p class="juan">Correo.com</p>
-<p>Telefono</p>
-<p class="juan">+52</p>
-<p>Presupuesto</p>
-<p class="juan">$</p>
-<p> Mensaje</p>
-<p class="juan">Ejemplo....</p>
+
+      <!--formulario-->
+<form id="Formulario"> 
+
+  <div class="my-3"> 
+
+      <label for="name">Nombre:</label> 
+
+      <input type="text" name="name" class="form-control" id="Nombre" placeholder="Ingresa tu nombre" required> 
+
+    </div> 
+
+  <div class="my-3"> 
+
+    <label for="email">Correo:</label> 
+
+    <input type="email" name="email" class="form-control" id="Correo" placeholder="Enter email" required> 
+
+  </div> 
+
+  <div class="mb-3"> 
+
+    <label for="tel">Telefono:</label> 
+
+    <input type="tel" name="phone" class="form-control" id="Tel" placeholder="Telefono" > 
+
+  </div> 
 
 
-<button type="button" class="boton">Enviar</button>
 
+
+  <div class="mb-3"> 
+
+      <label for="adress">Direccion:</label> 
+
+      <input type="text" name="message" class="form-control" id="Direccion" placeholder="Dirección" > 
+
+    </div> 
+
+
+
+
+  <div class="mb-3"> 
+
+      <label for="message">Comentarios:</label> 
+
+      <textarea name="message" class="form-control" placeholder="Mensaje" required="" id="Mensaje"></textarea> 
+
+    </div> 
+
+   
+
+  <button type="submit" class="boton" name="enviar">Enviar</button> 
+
+</form> 
 
     </div>
     </div>
@@ -201,5 +242,26 @@
     toastList.forEach(toast => toast.show()) 
   }
 </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script> 
+      $(document).ready(function(){ 
+          $("#Formulario").submit(function(e) { 
+              e.preventDefault(); 
+              const nombre = $("#Nombre").val(); 
+              const correo = $("#Correo").val(); 
+              const tel = $("#Tel").val(); 
+              const direccion = $("#Direccion").val(); 
+              const mensaje = $("#Mensaje").val(); 
+
+              const referencia = "mailto:cristipb2000@gmail.com?subject=Peticion%20de%20informacion&body=Nombre:%20"+nombre+"%0D%0ACorreo:%20"+correo+"%0D%0ATelefono:%20"+tel+"%0D%0ADirección:%20"+direccion+"%0D%0AMensaje:%20"+mensaje; 
+              const enlace = document.createElement("a"); 
+              enlace.href = referencia; 
+              enlace.click();   
+          }); 
+      });      
+
+  </script> 
+
 </body>
 </html>
