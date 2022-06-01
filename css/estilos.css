@@ -202,6 +202,12 @@ footer a {
   font-family: "Space Mono", monospace;
 }
 
+.precios {
+  border: #FEA400 2px solid;
+  border-radius: 10px;
+  font-size: small;
+}
+
 /*-------------------------------------------------------------- 
 
 # GALERÍA 1 MODAL 
